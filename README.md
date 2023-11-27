@@ -14,8 +14,8 @@ O propósito não é fazer prescrições médicas, apenas auxiliar com conteúdo
 
 **Integrantes :**
 
-- Lucca Augusto Matteoni RM98146
-- Vitor Cruz dos Santos RM553621
+- Lucca Augusto Matteoni RM98146 - 1TDSPB
+- Vitor Cruz dos Santos RM553621 - 1TDSPB
 
 
 
