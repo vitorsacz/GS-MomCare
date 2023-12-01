@@ -105,6 +105,17 @@ def listar_medicos(lista_medicos):
         print(f"Especialidade: {especialidade}")
     print(50*"-")
 
+def listar_dados_pacientes(pacientes):
+
+    print(50*"-")
+    print("PACIENTES")
+    print(50*"-")
+
+    for nome, dados in pacientes.items():
+        print("\n")
+        print(nome)
+        for chave, valor in dados.items():
+            print(f"{chave} - {valor}")  
 
 
 
