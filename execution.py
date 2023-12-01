@@ -17,11 +17,13 @@ def menu():
             perfil = funcoes.perfil_usuario()
 
             if perfil == "medico":
+                print('\n')
                 funcoesMedico.menuMedico()
                 print("VOLTANDO AO MENU PRINCIPAL...")
 
             elif perfil == "paciente":
-                funcoesPaciente.menuPaciente
+                print('\n')
+                funcoesPaciente.menuPaciente()
                 print("VOLTANDO AO MENU PRINCIPAL...")
 
         elif user_op == "2":

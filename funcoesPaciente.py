@@ -157,12 +157,16 @@ def menuPaciente():
                 acompanhamento = input("Já realiza acompanhamento médico prévio?")
                 
                 cadastrar_paciente(pacientes, nome, idade, tel, semanas, acompanhamento)
+                print('\n')
 
             elif user_op == "2":
                 listar_medicos(lista_medicos)
+                print('\n')
 
             elif user_op == "3":
-                listar_dias_disponiveis(pacientes)
+                listar_dias_disponiveis(agenda_consultas)
+                print('\n')
+                
             
             elif user_op == "4":
                 print("SAINDO...")
