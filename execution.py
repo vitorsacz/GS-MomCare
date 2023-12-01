@@ -35,6 +35,7 @@ def menu():
 
         else:
                 print("Insira uma opcao válida")
+
             
 
 if __name__ == "__main__":
