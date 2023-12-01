@@ -68,7 +68,8 @@ def triagem(pacientes_triagem, nome, queixa, alergias, urgencia, especialidade):
     inserir_triagem["especialidade"] = especialidade
 
     pacientes_triagem[nome] = inserir_triagem
-
+    
+    print("\n")
     print(f"Trigem de {nome}, realizada com sucesso")
 
 
@@ -77,16 +78,17 @@ def triagem(pacientes_triagem, nome, queixa, alergias, urgencia, especialidade):
 
 def cadastrar_paciente(pacientes, nome, idade, telefone, semanas, acompanhamento):
 
-    #CRIAR UM NOVA PACIENTE
+    
     nova_paciente = {}
     nova_paciente ["idade"] = idade
     nova_paciente ["telefone"] = telefone
     nova_paciente ["semanas"] =  semanas
     nova_paciente ["acompanhamento"] = acompanhamento
 
-    #INSERIR UMA NOVA PACIENTE
+    
     pacientes[nome] = nova_paciente
 
+    print("\n")
     print(f"Paciente {nome}, adicionada com sucesso!")
 
 
@@ -107,6 +109,11 @@ def listar_medicos(lista_medicos):
 
 
 def listar_dados_pacientes(pacientes):
+
+    print(50*"-")
+    print("PACIENTES")
+    print(50*"-")
+
     for nome, dados in pacientes.items():
         print("\n")
         print(nome)
@@ -118,6 +125,10 @@ def listar_dados_pacientes(pacientes):
 
 
 def listar_dias_disponiveis(agenda_consultas):
+    print(50*"-")
+    print("DIAS DISPONÍVEIS")
+    print(50*"-")
+
     for nome, dados in agenda_consultas.items():
         print("\n")
         print(nome)

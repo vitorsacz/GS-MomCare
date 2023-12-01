@@ -22,4 +22,7 @@ def perfil_usuario():
     elif user_op == "2":
         perfil = "paciente"
 
+    else:
+        print("Insira uma opcao válida")
+
     return perfil 

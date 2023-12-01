@@ -30,6 +30,9 @@ def menu():
             print("VOLTE SEMPRE")
             print(50*"-")
             break
+
+        else:
+                print("Insira uma opcao válida")
             
 
 if __name__ == "__main__":

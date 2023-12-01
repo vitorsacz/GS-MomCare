@@ -70,6 +70,7 @@ def triagem(pacientes_triagem, nome, queixa, alergias, urgencia, especialidade):
 
     pacientes_triagem[nome] = inserir_triagem
 
+    print("\n")
     print(f"Trigem de {nome}, realizada com sucesso")
 
 
@@ -87,7 +88,8 @@ def cadastrar_paciente(pacientes, nome, idade, telefone, semanas, acompanhamento
 
     #INSERIR UMA NOVA PACIENTE
     pacientes[nome] = nova_paciente
-
+    
+    print("\n")
     print(f"Paciente {nome}, adicionada com sucesso!")
 
 
@@ -107,13 +109,19 @@ def listar_medicos(lista_medicos):
 
 
 
-def listar_dados_pacientes(pacientes):
-    for nome, dados in pacientes.items():
+print("\n")
+
+def listar_triagem_pacientes(pacientes_triagem):
+
+    print(50*"-")
+    print("PACIENTES TRIADOS")
+    print(50*"-")
+
+    for nome, dados in pacientes_triagem.items():
         print("\n")
         print(nome)
         for chave, valor in dados.items():
             print(f"{chave} - {valor}")  
-
 
 
 
@@ -128,23 +136,29 @@ def listar_dias_disponiveis(agenda_consultas):
 def menuMedico():
         
         while True: 
+            print("\n")
             print("O QUE DESEJA REALIZAR?")
+            print("\n")
 
             print("1- INSERIR NOVO PACIENTE")
             print("2- LISTA DE PACIENTES")
             print("3- REALIZAR TRIAGEM")
-            print("4- SAIR")
+            print("4- LISTAR PACIENTES TRIADOS")
+            print("5- SAIR")
 
+            print("\n")
             user_op  = input("Informe sua opcão: ")
 
             if user_op == "1":
+                print("\n")
                 nome_paciente = input("Qual o nome da paciente? ")
                 idade_paciente = input("Qual idade da paciente? ")
                 tel_paciente = input("Qual o telefone da paciente? ")
-                semanas_paciente = input("Quantas semanas de gestação ")
-                acompanhamento_paciente = input("Possui acompanhamento médico prévio?")
+                semanas_paciente = input("Quantas semanas de gestação?  ")
+                acompanhamento_paciente = input("Possui acompanhamento médico prévio? ")
                 
                 cadastrar_paciente(pacientes, nome_paciente, idade_paciente, tel_paciente, semanas_paciente, acompanhamento_paciente)
+                print("\n")
 
             elif user_op == "2":
                 listar_dados_pacientes(pacientes)
@@ -161,6 +175,15 @@ def menuMedico():
                 triagem(pacientes_triagem, nome_paciente, queixa_paciente, alergias_paciente, urgencia_paciente, especialidade_paciente)
 
             elif user_op == "4":
+                listar_triagem_pacientes(pacientes_triagem)
+                
+            
+
+
+            elif user_op == "5":
                 print("SAINDO...")
                 break
+
+            else:
+                print("Insira uma opcao válida")
             
