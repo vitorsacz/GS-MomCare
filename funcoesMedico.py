@@ -178,7 +178,7 @@ def menuMedico():
                 
 
                 nome_paciente = input("Informe o nome da paciente: ")
-                queixa_paciente = input("Qual a queixa da paciente ")
+                queixa_paciente = input("Qual a queixa da paciente: ")
                 alergias_paciente = input("A paciente possui alguma alergia? ")
                 urgencia_paciente = input("Qual a urgencia paciente? ")
                 especialidade_paciente = input("Qual a médico especialista é indicado para consultar a paciente?")
